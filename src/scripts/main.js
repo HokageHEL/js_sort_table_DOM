@@ -13,6 +13,7 @@ headers.forEach((header, index) => {
 
       if (header.textContent === 'Salary') {
         const parseSalary = (salary) => parseFloat(salary.replace(/[$,]/g, ''));
+
         return parseSalary(cellA) - parseSalary(cellB);
       }
 
